@@ -1,0 +1,248 @@
+/* ===== GLOBAL RESET and BASE STYLE (applies to all HTML pages) ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* Enables smooth scrolling for all pages */
+  }
+  
+  body {
+    font-family: Arial, sans-serif; /* Applies to body text across all pages */
+    background-color: #add8e6;      /* Sets the light blue background for all pages */
+    color: #00008b;                 /* Sets the default text color (dark blue) */
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* ===== NAVBAR (Applies to all pages since they all have a navbar) ===== */
+  nav {
+    background-color: #00008b;  /* Dark blue background of navbar */
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  nav ul {
+    list-style-type: none;  /* Removes bullet points from nav links */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background-color: white;
+    color: #00008b;
+  }
+  
+  /* ===== HEADER (Used in index.html's intro heading and possibly others) ===== */
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+  }
+  
+  /* ===== SECTION STYLING (Used for: About Me, Education, Mission, Projects, etc.) ===== */
+  section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #00008b;
+    border-radius: 8px;
+    background-color: #f0f8ff;  /* Light contrasting section background */
+  }
+  
+  /* ===== IMAGE STYLING (Used in About Me, Educational Background) ===== */
+  img {
+    max-width: 100%;    /* Makes images responsive */
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* ===== VIDEO & AUDIO (If used, e.g., in Projects page) ===== */
+  video, audio {
+    display: block;
+    margin-top: 10px;
+    max-width: 100%;
+  }
+  
+  /* ===== EDUCATIONAL TABLE (educationalbackground.html) ===== */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    border: 1px solid #00008b;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #00008b;
+    color: white;
+  }
+  
+  /* ===== CONTACT FORM (contact.html if using a form) ===== */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    border: 1px solid #00008b;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    background-color: #00008b;
+    color: white;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: white;
+    color: #00008b;
+  }
+  
+  /* ===== FOOTER (Any page with a footer, likely contact.html or index.html) ===== */
+  footer {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #00008b;
+    margin-top: 40px;
+    font-size: 0.9em;
+  }
+  
+  /* ===== TEXT HIGHLIGHTS (Used for emphasis in all pages) ===== */
+  mark {
+    background-color: yellow;
+  }
+  
+  em {
+    font-style: italic;
+  }
+  
+  i {
+    font-style: italic;
+  }
+  
+  sub {
+    font-size: 0.8em;
+    vertical-align: sub;
+  }
+  
+  sup {
+    font-size: 0.8em;
+    vertical-align: super;
+  }
+  
+  /* ===== ASIDE BOX (Fun Fact or extra info - index.html or interests.html) ===== */
+  aside {
+    border-left: 5px solid #00008b;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #e6f7ff;
+  }
+  
+  /* ===== ACHIEVEMENTS SECTION (Likely in about me or projects page) ===== */
+  #achievements div {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #dbeeff;
+    border-left: 4px solid #00008b;
+  }
+  /* the CSS for JS added from 22nd April 2025 onwards*/
+  /* the modal's CSS for the popup of my about me */
+  #modal {
+    display: none; /* Initially hides the modal until triggered by JavaScript */
+    position: fixed; /* Keeps the modal in place even when scrolling */
+    top: 50%; /* Positions the modal vertically at the center of the viewport */
+    left: 50%; /* Positions the modal horizontally at the center of the viewport */
+    transform: translate(-50%, -50%); /* Offsets the modal back by 50% of its own width/height to truly center it */
+    padding: 20px; /* Adds space inside the modal around its content */
+    background-color: rgb(32, 28, 109); /* Sets the modal's background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adds a soft shadow for a "floating" effect */
+    z-index: 1000; /* Optional: ensures the modal appears above other content on the page */
+  }
+  
+  /* to change the color of the modal */
+  #modal > div {
+    background-color: #3b70a5; /* Sets the inner popup box to a custom blue color */
+    padding: 20px; /* Adds internal spacing inside the popup box */
+    border-radius: 12px; /* Rounds the corners of the popup for a softer look */
+    box-shadow: 0 4px 12px rgba(159, 53, 143, 0.2); /* Adds a colorful subtle shadow effect */
+  }
+  /*style for the modal button*/
+  #openModal {
+    background-color: #3b70a5; /* Button background color (blue) */
+    color: white; /* Text color */
+    border: none; /* Removes the default border */
+    padding: 10px 20px; /* Adds padding around the text */
+    border-radius: 8px; /* Rounds the corners */
+    cursor: pointer; /* Makes the cursor a pointer on hover */
+    font-size: 16px; /* Increases font size */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Optional: Hover effect */
+  #openModal:hover {
+    background-color: #2e5980; /* Darker blue on hover */
+  }
+  /* end of the modal's CSS for the popup of my about me */
+  
+  /* start of the modal's CSS for the popup of my shared youtube video */
+  /* Modal background */
+  #videoPopup {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Modal content box */
+  .video-popup-content {
+    position: relative;
+    background-color: #538593;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(157, 173, 235, 0.2);
+  }
+  
+  /* Close button */
+  #closeVideoPopup {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  #hoverButton:hover {
+    background-color: rgb(169, 234, 229);
+    color: white;
+    text-align: center;
+    margin: 0%;
+  }

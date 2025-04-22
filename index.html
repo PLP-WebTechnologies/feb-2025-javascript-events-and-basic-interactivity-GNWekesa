@@ -1,0 +1,251 @@
+
+<!DOCTYPE html> <!-- Declares the document type and version of HTML -->
+<html lang="en"> <!-- Starts the HTML document and sets the language to English -->
+<head>
+  <meta charset="UTF-8"> <!-- Sets the character encoding for the document to UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ensures proper rendering on mobile devices -->
+  <title>Gabriella Nekesa Wekesa - Portfolio</title> <!-- Sets the title of the webpage -->
+  <link rel="stylesheet" href="style.css"><!-- link to my CSS-->
+  <script src="script.js"></script><!-- link to my JS->
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <label class="menu-icon">☰</label>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Technical Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#interests">Interests</a></li>
+      <li><a href="#hobbiesandmusic">Hobbies and music</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contactme">Contact Me</a></li>
+      
+    </ul>
+  </nav>
+  <button id="openModal">Click to See More About Me</button>  <!-- i added this on 22nd April 2025 after learning about modals-->
+  <br> <br>
+  <!-- section for event handling -->
+  <button id="hoverButton"><h1>Welcome to My Portfolio!</h1></button>
+  <br> <br>
+  <input type="text" id="keypressInput" placeholder="Press Enter!">
+  <br> <br>
+  <button id="changeTextButton">Click to Change Text: Gabriella Nekesa Wekesa</button>
+
+  <div id="modal">
+    <div style="text-align: center;">
+      <!-- You can totally add an image to your modal (popup window). 
+     Just insert an <img> tag inside your #modal div, like this:-->
+      <img src="images/portraitbest.jpg" alt="Gabriella" width="200">
+      <p>Am a proud Bukusu Queen!That's me! Welcome to my portfolio 💻</p>
+      <button id="closeModal">Close</button>
+    </div>
+  </div>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <h1>About Me</h1>
+    <img src="images/meee.jpg" alt="Gabriella Nekesa Wekesa">
+    <p>
+      I am Gabriella Nekesa Wekesa, a dedicated Computer Science professional with expertise in software development, 
+      database management, and problem-solving. I thrive in dynamic work environments, continuously expanding my skills 
+      through hands-on experience.
+    </p>
+    <blockquote>
+      I seek technical and hands-on opportunities that can develop productive outcomes for the organization I work for. I aim to develop creative methods of ensuring different work activities get performed in feasible ways.
+    </blockquote>
+  </section>
+ 
+  <!-- Education Section -->
+  <section id="education">
+    <h1>Education</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Institution</th>
+          <th>Course / Certification</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>St. Paul’s University</b></td>
+          <td>Diploma in Computer Science</td>
+        </tr>
+        <tr>
+          <td><b>St. Lucie Kiriri Girls Secondary School</b></td>
+          <td>Kenya Certificate of Secondary Education (KCSE)</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section id="skills">
+    <h1>Technical Skills</h1>
+    <div>
+      <img src="images/mysqllogo.png" alt="SQL Logo">
+      <img src="images/pythonlogo.png" alt="Python Logo">
+      <img src="images/html5logo.png" alt="HTML Logo">
+      <img src="images/css3logo.png" alt="CSS Logo">
+      <img src="images/javascript.png" alt="JavaScript Logo">
+    </div>
+  </section>
+
+  <!-- NEW: Achievements Section Using <div> -->
+  <section id="achievements">
+    <h1>Achievements</h1>
+    <div>
+      <h3>Hackathon Participation</h3>
+      <p>Participated in the 2025 Nairobi Tech Hackathon</p>
+    </div>
+    <div>
+      <h3>Top Student Award</h3>
+      <p>Recognized as the top student in Computer Science Diploma Class of 2020 at St. Paul’s University.</p>
+    </div>
+    <div>
+      <h3>Certification</h3>
+      <p>Completed a Python Course<a href="https://cs50.harvard.edu/python/2022/"> CS50’s Introduction to Programming with Python</a></p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h1>Projects</h1>
+    <p>My work on this YouTube channel.</p>
+    <p>
+      <a href="https://www.youtube.com/@mtzioncbd" target="_blank">
+        &#8594; Visit My Church YouTube Channel (I Manage It)
+      </a>
+    </p>
+    <p>Explore my work on GitHub.</p>
+    <p>
+      <a href="https://github.com/GNWekesa" target="_blank">
+        &#8594; Visit My GitHub
+      </a>
+    </p>
+    <h2>Featured Projects</h2>
+    <ul>
+      <li>
+        <strong>Project Title 1:</strong>
+        <p><mark>A brief description of Project 1, explaining its purpose and technologies used.</mark></p>
+      </li>
+      <li>
+        <strong>Project Title 2:</strong>
+        <p><em>A brief description of Project 2, explaining its purpose and technologies used.</em></p>
+      </li>
+      <li>
+        <strong>Project Title 3:</strong>
+        <p><i>A brief description of Project 3, explaining its purpose and technologies used.</i></p>
+      </li>
+    </ul>
+    <p><small>Feel free to reach out for collaboration or inquiries!</small></p>
+    <p>Gabriella<sub>born</sub>Wekesa<sup>1996</sup></p>
+  </section>
+
+  <!-- Interests Section -->
+  <section id="interests">
+    <h1>Interests</h1>
+    <p>
+      Technology has always fascinated me, and I am passionate about exploring new innovations that shape the future. 
+      My key areas of interest include:
+    </p>
+    <ul>
+      <li>Artificial Intelligence & Machine Learning</li>
+      <li>Web Development (HTML, CSS, JavaScript)</li>
+      <li>Database Design</li>
+      <li>Software Development & Automation</li>
+      <li>Data Science</li>
+    </ul>
+    <p>
+      I am constantly learning and growing in these fields, aiming to contribute to the tech industry in meaningful ways.
+    </p>
+  </section>
+<!-- Hobbies and favorite music -->
+<section id="hobbiesandmusic">
+  <h1>Hobbies and Music</h1>
+    <!-- MAIN ARTICLE AREA 
+    am commenting this since it contains music and audio HtML which works
+    but the files are too large to save on different folders-->
+  <!-- 
+  <article>
+    <h2>A summary about me</h2>
+    <p>I’m Gabriella Nekesa Wekesa, passionate about tech, development, and entrepreneurship.</p>
+  </article>
+
+  <h2>My favorite music</h2>
+  <audio controls>
+    <source src="media/Coldplay - Hymn For The Weekend (Official Video).mp3" type="audio/mpeg">
+  </audio>
+
+  <aside>
+    <h3>Fun Fact</h3>
+    <p>I love exploring AI and building creative tech projects in my free time!</p>
+  </aside>
+
+  <h3>That's me</h3>
+  <video width="320" height="240" controls>
+    <source src="media/me.mp4" type="video/mp4">
+  </video>
+  -->
+  <!-- my audio and videos above could not load since my folder would be too big to push to github
+   so i wanna share my fave music as a youtube link here using JS for the popup that shall play the video-->
+    <!-- Trigger Button -->
+    <button id="openVideoPopup">Watch my favorite artist's video</button>
+    <!-- Modal Structure -->
+<!-- Modal Structure -->
+    <div id="videoPopup">
+      <div class="video-popup-content">
+        <span id="closeVideoPopup">&times;</span>
+<!-- That will embed the "Jerusalema Dance Challenge" video properly in your popup. 
+ Let me know if you’d like it to autoplay, mute, or start at a specific time!-->
+        <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/RB-RcX5DS5A"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+</section>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h1>Contact</h1>
+    <p><strong>Name:</strong> Gabriella Nekesa Wekesa</p>
+    <p><strong>My Email:</strong> <a href="mailto:gabriellanekwek@gmail.com">gabriellanekwek@gmail.com</a></p>
+    <p><strong>My GitHub:</strong> <a href="https://github.com/GNWekesa" target="_blank">github.com/GNWekesa</a></p>
+    <p><strong>My WhatsApp:</strong> <a href="https://wa.me/+254115331948" target="_blank">Chat on WhatsApp</a></p>
+    <p><strong>My LinkedIn:</strong> <a href="https://www.linkedin.com/in/gabriella-n-w-b43951357" target="_blank">LinkedIn Profile</a></p>
+  </section>
+
+  <!-- Contact Me Section -->
+  <section id="contactme">
+    <h1>Contact Me</h1>
+    <form action="/action_page.php" method="post">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" required><br><br>
+
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <a href="https://www.w3.org/WAI/" target="_blank">Accessibility Guidelines</a>
+  
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Gabriella Nekesa Wekesa. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
