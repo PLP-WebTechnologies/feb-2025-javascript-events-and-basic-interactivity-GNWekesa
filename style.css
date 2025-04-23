@@ -240,9 +240,5 @@
     cursor: pointer;
   }
   
-  #hoverButton:hover {
-    background-color: rgb(169, 234, 229);
-    color: white;
-    text-align: center;
-    margin: 0%;
-  }
+  /* style for elements in the main section*/
+  

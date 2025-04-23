@@ -46,18 +46,34 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-//script for event handling for keypress
-  const input = document.getElementById('keypressInput');
+// the below script is for 
+//Write JavaScript that:
+//Changes text content dynamically.
+//Modifies CSS styles via JavaScript.
+//Adds or removes an element when a button is clicked.
+// Select elements
+const text = document.getElementById('text');
+const changeTextBtn = document.getElementById('changeTextBtn');
+const changeStyleBtn = document.getElementById('changeStyleBtn');
+const addElementBtn = document.getElementById('addElementBtn');
 
-  input.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') {
-      alert('Enter key was pressed!');
-    }
-  });
+// Function to change text content from the initial one in the html element with id="text"
+changeTextBtn.addEventListener('click', () => {
+  text.textContent = "GABRIELLA NEKESA WEKESA";
+});
+
+// Function to change the CSS styles of my text
+changeStyleBtn.addEventListener('click', () => {
+  text.style.color = '#001C6C';
+  text.style.fontSize = '20px';
+  text.style.fontFamily = 'Arial, sans-serif';
+});
+
+// Function to add a new element
+addElementBtn.addEventListener('click', () => {
+  const newPara = document.createElement('p');
+  newPara.textContent = "This Bukusu queen loves herself, i have added this new line dynamically";
+  document.body.appendChild(newPara);
+});
+
   
-// script to change text color
-  const changeTextButton = document.getElementById('changeTextButton');
-  changeTextButton.addEventListener('click', () => {
-    changeTextButton.textContent = 'Text Changed!';
-    changeTextButton.style.backgroundColor = 'green';
-  });

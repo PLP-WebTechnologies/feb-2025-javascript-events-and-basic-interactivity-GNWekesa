@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ensures proper rendering on mobile devices -->
   <title>Gabriella Nekesa Wekesa - Portfolio</title> <!-- Sets the title of the webpage -->
   <link rel="stylesheet" href="style.css"><!-- link to my CSS-->
-  <script src="script.js"></script><!-- link to my JS->
 </head>
 <body>
 
@@ -27,13 +26,19 @@
   </nav>
   <button id="openModal">Click to See More About Me</button>  <!-- i added this on 22nd April 2025 after learning about modals-->
   <br> <br>
-  <!-- section for event handling -->
-  <button id="hoverButton"><h1>Welcome to My Portfolio!</h1></button>
-  <br> <br>
-  <input type="text" id="keypressInput" placeholder="Press Enter!">
-  <br> <br>
-  <button id="changeTextButton">Click to Change Text: Gabriella Nekesa Wekesa</button>
+  <!-- start of main section that includes elements to be modified by JS-->
+    <main>
+      <section>
+        <p id="text">Click one of the 3 buttons below to interact with me!</p>
+      </section>
 
+      <div class="buttons">
+        <button id="changeTextBtn">Change Text</button>
+        <button id="changeStyleBtn">Change Style</button>
+        <button id="addElementBtn">Add Element</button>
+      </div>
+    </main>
+  <!-- end of main section-->
   <div id="modal">
     <div style="text-align: center;">
       <!-- You can totally add an image to your modal (popup window). 
@@ -192,7 +197,7 @@
   <!-- my audio and videos above could not load since my folder would be too big to push to github
    so i wanna share my fave music as a youtube link here using JS for the popup that shall play the video-->
     <!-- Trigger Button -->
-    <button id="openVideoPopup">Watch my favorite artist's video</button>
+    <button id="openVideoPopup">Watch my favorite artists' video</button>
     <!-- Modal Structure -->
 <!-- Modal Structure -->
     <div id="videoPopup">
@@ -246,6 +251,6 @@
   <footer>
     <p>&copy; 2025 Gabriella Nekesa Wekesa. All rights reserved.</p>
   </footer>
-
+  <script src="script.js"></script><!-- link to my JS->
 </body>
 </html>
