@@ -37,13 +37,58 @@
         <button id="changeStyleBtn">Change Style</button>
         <button id="addElementBtn">Add Element</button>
       </div>
+      <!-- the above is from week 5 assignment, below is for week 6 assignment-->
+        <!-- Event Handling Section -->
+      <section id="events">
+        <h2>My Event Playground 🎈Find out my favorite artist and write one of their songs</h2>
+        <button id="hoverBtn">Hover over me to see my favorite artists</button>
+        <p id="hoverResult">Hover to see magic!</p>
+        <input type="text" id="keyInput" placeholder="Type something..." />
+        <p id="keyResult"></p>
+        <button id="secretBtn">Double Click Me 🤫</button>
+        <p id="secretResult"></p>
+      </section>
+
+      <!-- Image Gallery -->
+      <section id="gallery">
+        <h2>Image Gallery 🎮</h2>
+        <img id="galleryImg" src="https://via.placeholder.com/300" alt="Gallery" />
+        <div>
+          <button id="prevImg">⏪ Prev</button>
+          <button id="nextImg">Next ⏩</button>
+        </div>
+      </section>
+
+      <!-- Tabs -->
+      <section id="tabs">
+        <h2>Tabbed Content</h2>
+        <div class="tab-buttons">
+          <button class="tab-btn" data-tab="tab1">Tab 1</button>
+          <button class="tab-btn" data-tab="tab2">Tab 2</button>
+        </div>
+        <div class="tab-content" id="tab1">This is the first tab content.</div>
+        <div class="tab-content" id="tab2" style="display:none;">This is the second tab content.</div>
+      </section>
+
+      <!-- Form Validation -->
+      <section id="form">
+        <h2>Signup Form 📋✅ Sign up here to receive updates about my projects' progress</h2>
+        <form id="signupForm" novalidate>
+          <input type="text" id="name" placeholder="Name" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <input type="password" id="password" placeholder="Password (min 8 chars)" required />
+          <button type="submit">Submit</button>
+          <p id="formFeedback"></p>
+        </form>
+      </section>
+
     </main>
   <!-- end of main section-->
   <div id="modal">
     <div style="text-align: center;">
       <!-- You can totally add an image to your modal (popup window). 
      Just insert an <img> tag inside your #modal div, like this:-->
-      <img src="images/portraitbest.jpg" alt="Gabriella" width="200">
+      <img src="https://github.com/GNWekesa/myimages/blob/main/portraitsmiling.jpg?raw=true" alt="Gabriella" width="200">
       <p>Am a proud Bukusu Queen!That's me! Welcome to my portfolio 💻</p>
       <button id="closeModal">Close</button>
     </div>
@@ -134,15 +179,15 @@
     <ul>
       <li>
         <strong>Project Title 1:</strong>
-        <p><mark>A brief description of Project 1, explaining its purpose and technologies used.</mark></p>
+        <p>Working on them, filling this before June 2025.</p>
       </li>
       <li>
         <strong>Project Title 2:</strong>
-        <p><em>A brief description of Project 2, explaining its purpose and technologies used.</em></p>
+        <p>Working on them, filling this before June 2025</p>
       </li>
       <li>
         <strong>Project Title 3:</strong>
-        <p><i>A brief description of Project 3, explaining its purpose and technologies used.</i></p>
+        <p><i>Working on them, filling this before June 2025</i></p>
       </li>
     </ul>
     <p><small>Feel free to reach out for collaboration or inquiries!</small></p>
